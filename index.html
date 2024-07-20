@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marriage Registration</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <form id="husbandForm" class="form">
+      <h2>Husband's Information</h2>
+      <div class="form-group">
+        <label for="husband_name">Name:</label>
+        <input type="text" id="husband_name" name="husband_name" required>
+      </div>
+      <div class="form-group">
+        <label for="husband_adhar">Adhar Card No:</label>
+        <input type="text" id="husband_adhar" name="husband_adhar" required>
+      </div>
+      <div class="form-group">
+        <label for="husband_address">Address:</label>
+        <textarea id="husband_address" name="husband_address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="husband_photo">Upload Photo:</label>
+        <input type="file" id="husband_photo" name="husband_photo" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Upload</button>
+      </div>
+      <div id="husband_uploaded_photo"></div>
+    </form>
+  </div>
+  
+  <div class="form-container">
+    <form id="wifeForm" class="form">
+      <h2>Wife's Information</h2>
+      <div class="form-group">
+        <label for="wife_name">Name:</label>
+        <input type="text" id="wife_name" name="wife_name" required>
+      </div>
+      <div class="form-group">
+        <label for="wife_adhar">Adhar Card No:</label>
+        <input type="text" id="wife_adhar" name="wife_adhar" required>
+      </div>
+      <div class="form-group">
+        <label for="wife_address">Address:</label>
+        <textarea id="wife_address" name="wife_address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="wife_photo">Upload Photo:</label>
+        <input type="file" id="wife_photo" name="wife_photo" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Upload</button>
+      </div>
+      <div id="wife_uploaded_photo"></div>
+    </form>
+  </div>
+
+  <div class="form-container">
+    <form id="marriageDetailsForm" class="form">
+      <h2>Marriage Details</h2>
+      <div class="form-group">
+        <label for="date_of_marriage">Date of Marriage:</label>
+        <input type="date" id="date_of_marriage" name="date_of_marriage" required>
+      </div>
+      <div class="form-group">
+        <label for="place_of_marriage">Place of Marriage:</label>
+        <input type="text" id="place_of_marriage" name="place_of_marriage" required>
+      </div>
+      <div class="form-group">
+        <label for="marriage_photo">Upload Marriage Photo:</label>
+        <input type="file" id="marriage_photo" name="marriage_photo" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Upload</button>
+      </div>
+      <div id="marriage_uploaded_photo"></div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
